@@ -3,11 +3,12 @@ import EmployeeService from '../services/EmployeeService';
 
 class ListEmployeeComponent extends Component {
     constructor(props){
-        super(props)
+        super(props);
 
         this.state={
             employees: []
         }
+        this.addEmployee =this.addEmployee.bind(this);
     }
 
     componentDidMount(){
@@ -17,10 +18,18 @@ class ListEmployeeComponent extends Component {
 
     }
 
+    addEmployee(){
+        const path = '/add-employee';
+        this.props.history.push(path);  
+    }
+
     render() {
         return (
             <div>
                 <h2 className="text-center">Employee List</h2>
+                <div>
+                    <button className="btn btn-primary" onClick = {this.addEmployee}>Add Employee</button>
+                </div>
                 <div className="row">
                     <table className="table table-striped table-bordered">
                         <thead>
