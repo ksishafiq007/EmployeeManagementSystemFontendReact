@@ -28,7 +28,7 @@ class ListEmployeeComponent extends Component {
             <div>
                 <h2 className="text-center">Employee List</h2>
                 <div>
-                    <button className="btn btn-primary" onClick = {this.addEmployee}>Add Employee</button>
+                    <button className="btn btn-primary" onClick = {()=>window.location.href="/add-employee"}>Add Employee</button>
                 </div>
                 <div className="row">
                     <table className="table table-striped table-bordered">
