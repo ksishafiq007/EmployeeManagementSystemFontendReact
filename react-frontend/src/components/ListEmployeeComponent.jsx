@@ -8,7 +8,7 @@ class ListEmployeeComponent extends Component {
         this.state={
             employees: []
         }
-        this.addEmployee =this.addEmployee.bind(this);
+      /*  this.addEmployee =this.addEmployee.bind(this);  */
     }
 
     componentDidMount(){
@@ -18,10 +18,10 @@ class ListEmployeeComponent extends Component {
 
     }
 
-    addEmployee(){
+  /*  addEmployee(){
         const path = '/add-employee';
         this.props.history.push(path);  
-    }
+    }  */
 
     render() {
         return (
